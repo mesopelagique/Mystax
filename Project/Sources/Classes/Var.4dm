@@ -4,7 +4,7 @@ Class constructor($template : Text)
 	Super:C1705($template)
 	This:C1470.keyPath:=Split string:C1554($template; ".")
 	
-Function render($data : Object) : Text
+Function render($data : Variant) : Text
 	var $currentData : Variant
 	$currentData:=$data
 	
@@ -14,7 +14,11 @@ Function render($data : Object) : Text
 	End for each 
 	
 	If ($currentData=Null:C1517)
-		$currentData:=$data[This:C1470.template]  // be gentle try to find with .
+		If (Length:C16(This:C1470.template)>0)
+			$currentData:=$data[This:C1470.template]  // be gentle try to find with 
+		Else 
+			$currentData:=$data  // support {{}}
+		End if 
 	End if 
 	
 	Case of 
