@@ -83,6 +83,27 @@ ASSERT:C1129($parser.render(New object:C1471())="Show:\n")
 ASSERT:C1129($parser.render(New object:C1471("persons"; New collection:C1472(New object:C1471("name"; "test"))))="Show:\n*test\n")
 ASSERT:C1129($parser.render(New object:C1471("persons"; New collection:C1472(New object:C1471("name"; "test"); New object:C1471("name"; "test2"))))="Show:\n*test\n*test2\n")
 
+If (ds:C1482["Table_1"]#Null:C1517)
+	If (ds:C1482["Table_1"].all().length=0)
+		C_OBJECT:C1216($entity)
+		$entity:=ds:C1482["Table_1"].new()
+		$entity.name:="test"
+		$entity.save()
+		
+		$entity:=ds:C1482["Table_1"].new()
+		$entity.name:="test2"
+		$entity.save()
+	End if 
+	
+	If (ds:C1482["Table_1"].all().length=2)
+		ASSERT:C1129($parser.render(New object:C1471("persons"; ds:C1482["Table_1"].all()))="Show:\n*test\n*test2\n")
+	Else 
+		ASSERT:C1129(False:C215; "Cannot test if entity count is not two with predefined data")
+	End if 
+Else 
+	// ignore, do not want to commit data or structure
+End if 
+
 // section coll with direct value
 $template:="Show:\n{{#persons}}*{{}}\n{{/persons}}"
 $nodeCount:=2
@@ -94,5 +115,7 @@ ASSERT:C1129(OB Instance of:C1731($parser.nodes[1]; cs:C1710.Section))
 ASSERT:C1129($parser.render(New object:C1471())="Show:\n")
 ASSERT:C1129($parser.render(New object:C1471("persons"; New collection:C1472("test")))="Show:\n*test\n")
 ASSERT:C1129($parser.render(New object:C1471("persons"; New collection:C1472("test"; "test2")))="Show:\n*test\n*test2\n")
+
+
 
 

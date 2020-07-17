@@ -31,6 +31,20 @@ Function render($data : Object)->$result : Text
 				End for each 
 				
 			End for each 
+		: (Value type:C1509($value)=Is object:K8:27)
+			
+			If (OB Instance of:C1731($value; 4D:C1709.EntitySelection))
+				var $entity : 4D:C1709.Entity
+				$result:=""
+				For each ($entity; $value)
+					For each ($node; This:C1470.nodes)
+						$result:=$result+$node.render($entity)
+					End for each 
+				End for each 
+				
+			Else 
+				$result:=""
+			End if 
 			
 		: (Value type:C1509($value)=Is boolean:K8:9)
 			If ($value)
