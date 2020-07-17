@@ -4,7 +4,7 @@ Class constructor($template : Text)
 	Super:C1705($template)
 	This:C1470.keyPath:=Split string:C1554($template; ".")
 	
-Function render($data : Variant) : Text
+Function render($data : Variant)->$result : Text
 	var $currentData : Variant
 	$currentData:=$data
 	
@@ -28,9 +28,9 @@ Function render($data : Variant) : Text
 			 | (Value type:C1509($currentData)=Is longint:K8:6)\
 			 | (Value type:C1509($currentData)=Is real:K8:4)\
 			 | (Value type:C1509($currentData)=Is integer 64 bits:K8:25))
-			$0:=String:C10($currentData)
+			$result:=String:C10($currentData)
 		: ((Value type:C1509($currentData)=Is object:K8:27) | (Value type:C1509($currentData)=Is collection:K8:32))
-			$0:=JSON Stringify:C1217($currentData)
+			$result:=JSON Stringify:C1217($currentData)
 		Else 
-			$0:=String:C10($currentData)  // try...
+			$result:=String:C10($currentData)  // try...
 	End case 

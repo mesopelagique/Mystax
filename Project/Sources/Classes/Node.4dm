@@ -2,8 +2,8 @@
 Class constructor($template : Text)
 	This:C1470.template:=$template
 	
-Function render($data : Object) : Text
-	$0:=This:C1470.template
+Function render($data : Object)->$result : Text
+	$result:=This:C1470.template
 	
 Function static_compile($currentText : Text; $nodes : Collection)
 	If (Length:C16($currentText)>0)

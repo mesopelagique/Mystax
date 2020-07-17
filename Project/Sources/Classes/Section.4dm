@@ -8,7 +8,7 @@ Class constructor($template : Text; $section : Text; $parser : 4D:C1709.Function
 	
 	$parser.call(This:C1470; $template; This:C1470.nodes)
 	
-Function render($data : Object) : Text
+Function render($data : Object)->$result : Text
 	var $value : Variant
 	$value:=$data[This:C1470.section]
 	var $node : Object
@@ -16,16 +16,16 @@ Function render($data : Object) : Text
 		: (Value type:C1509($value)=Is collection:K8:32)
 			
 			var $next : Variant
-			$0:=""
+			$result:=""
 			For each ($next; $value)
 				For each ($node; This:C1470.nodes)
 					If (Value type:C1509($next)=Is object:K8:27)
-						$0:=$0+$node.render($next)
+						$result:=$result+$node.render($next)
 					Else 
 						If (OB Instance of:C1731($node; cs:C1710.Var))
-							$0:=$0+$node.render($next)
+							$result:=$result+$node.render($next)
 						Else 
-							$0:=$0+$node.render(New object:C1471(""; $next))
+							$result:=$result+$node.render(New object:C1471(""; $next))
 						End if 
 					End if 
 				End for each 
@@ -34,14 +34,14 @@ Function render($data : Object) : Text
 			
 		: (Value type:C1509($value)=Is boolean:K8:9)
 			If ($value)
-				$0:=""
+				$result:=""
 				For each ($node; This:C1470.nodes)
-					$0:=$0+$node.render($data)
+					$result:=$result+$node.render($data)
 				End for each 
 			Else 
-				$0:=""
+				$result:=""
 			End if 
 			
 		Else 
-			$0:=""
+			$result:=""
 	End case 
