@@ -96,5 +96,3 @@ ASSERT:C1129($parser.render(New object:C1471("persons"; New collection:C1472("te
 ASSERT:C1129($parser.render(New object:C1471("persons"; New collection:C1472("test"; "test2")))="Show:\n*test\n*test2\n")
 
 
-
-

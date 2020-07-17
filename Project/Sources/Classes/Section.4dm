@@ -19,7 +19,15 @@ Function render($data : Object) : Text
 			$0:=""
 			For each ($next; $value)
 				For each ($node; This:C1470.nodes)
-					$0:=$0+$node.render($next)
+					If (Value type:C1509($next)=Is object:K8:27)
+						$0:=$0+$node.render($next)
+					Else 
+						If (OB Instance of:C1731($node; cs:C1710.Var))
+							$0:=$0+$node.render($next)
+						Else 
+							$0:=$0+$node.render(New object:C1471(""; $next))
+						End if 
+					End if 
 				End for each 
 				
 			End for each 

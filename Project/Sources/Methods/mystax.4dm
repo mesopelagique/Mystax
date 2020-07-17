@@ -1,3 +1,3 @@
 //%attributes = {"shared":true,"preemptive":"capable"}
-var $0 : Object
+C_OBJECT:C1216($0)
 $0:=cs:C1710.Mystax.new()
