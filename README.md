@@ -7,8 +7,7 @@
 Create a parser for one template (`Text` variable) and compile it (only one time).
 
 ```4d
-$parser:=cs.Parser.new($template) // with $template a Text variable
-$parser.compile()
+$parser:=mystax.parse($template) // with $template a Text variable, which contains your template.
 ````
 
 Then render the result by passing the data you want to inject as `Object`.
@@ -25,8 +24,8 @@ The result of code
 $result:=$parser.render(New object("world"; "Eric"))
 ```
 
- will be 
- 
+ will be
+
  ```html
  Hello Eric
 ```
