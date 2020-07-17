@@ -104,4 +104,4 @@ and the result will be
 
 ### Saguinus mystax
 
-![Saguinus mystax](https://live.staticflickr.com/4070/4483628891_b78f842f67_b.jpg)
+![Saguinus mystax](https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Saguinus_mystax_at_the_Bronx_Zoo_01.jpg/440px-Saguinus_mystax_at_the_Bronx_Zoo_01.jpg)
