@@ -66,7 +66,7 @@ Shown.Never shown!
 
 #### Repeating block
 
-Using a `Collection` of object you could repeat a section
+Using a `Collection` of object or an entity selection you could repeat a section
 
 For instance if a book have multiple authors:
 ```Handlebars
@@ -76,7 +76,7 @@ For instance if a book have multiple authors:
 {{/author}}
 ```
 
-You can pass the list of authors as collection
+You can pass the list of authors as collection/selection
 
 ```4d
 $result:=$parser.render(New object("title"; "The Talisman"; \
