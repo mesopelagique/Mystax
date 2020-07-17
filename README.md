@@ -16,7 +16,7 @@ Then render the result by passing the data you want to inject as `Object`.
 For instance with this simple template:
 
 ```Handlebars
-Hello {{world}}"
+Hello {{world}}
 ```
 
 The result of code
@@ -92,6 +92,16 @@ and the result will be
   <h2>By Stephen King</h2>
 ```
 
-## Saguinus mystax
+## Why Mystax
+
+[Myxtax](https://en.wiktionary.org/wiki/mystax) word means mustache and it used to name some species
+
+- [Ellopostoma_mystax](https://en.wikipedia.org/wiki/Ellopostoma_mystax)
+- [Thryssa mystax](https://en.wikipedia.org/wiki/Thryssa_mystax)
+- [Saguinus mystax](https://en.wikipedia.org/wiki/Moustached_tamarin)
+- [Gnathophis mystax](https://en.wikipedia.org/wiki/Thinlip_conger)
+- [Mammillaria mystax](https://en.wikipedia.org/wiki/Mammillaria_mystax)
+
+### Saguinus mystax
 
 ![Saguinus mystax](https://live.staticflickr.com/4070/4483628891_b78f842f67_b.jpg)
