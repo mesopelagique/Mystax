@@ -37,24 +37,16 @@ Function render($data : Object)->$result : Text
 				var $entity : 4D:C1709.Entity
 				$result:=""
 				For each ($entity; $value)
-					For each ($node; This:C1470.nodes)
-						$result:=$result+$node.render($entity)
-					End for each 
+					$result:=$result+This:C1470.renderNodes($entity)
 				End for each 
 				
 			Else 
-				$result:=""
-				For each ($node; This:C1470.nodes)
-					$result:=$result+$node.render($value)
-				End for each 
+				$result:=This:C1470.renderNodes($value)
 			End if 
 			
 		: (Value type:C1509($value)=Is boolean:K8:9)
 			If ($value)
-				$result:=""
-				For each ($node; This:C1470.nodes)
-					$result:=$result+$node.render($data)
-				End for each 
+				$result:=This:C1470.renderNodes($data)
 			Else 
 				$result:=""
 			End if 
@@ -62,3 +54,10 @@ Function render($data : Object)->$result : Text
 		Else 
 			$result:=""
 	End case 
+	
+Function renderNodes($data : Variant)->$result : Text
+	var $node : Object
+	$result:=""
+	For each ($node; This:C1470.nodes)
+		$result:=$result+$node.render($data)
+	End for each 

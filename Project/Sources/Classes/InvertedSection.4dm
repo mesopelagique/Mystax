@@ -11,16 +11,31 @@ Function render($data : Object)->$result : Text
 	
 	Case of 
 		: ($value=Null:C1517)
-			$result:=""
-			For each ($node; This:C1470.nodes)
-				$result:=$result+$node.render($data)
-			End for each 
+			$result:=This:C1470.renderNodes(New object:C1471())
+		: (Value type:C1509($value)=Is collection:K8:32)
+			If ($value.length=0)
+				$result:=This:C1470.renderNodes(New object:C1471())
+			Else 
+				$result:=""
+			End if 
+			
+		: (Value type:C1509($value)=Is object:K8:27)
+			
+			If (OB Instance of:C1731($value; 4D:C1709.EntitySelection))
+				
+				If ($value.length=0)
+					$result:=This:C1470.renderNodes(New object:C1471())
+				Else 
+					$result:=""
+				End if 
+				
+			Else 
+				$result:=""
+			End if 
+			
 		: (Value type:C1509($value)=Is boolean:K8:9)
 			If (Not:C34($value))
-				$result:=""
-				For each ($node; This:C1470.nodes)
-					$result:=$result+$node.render($data)
-				End for each 
+				$result:=This:C1470.renderNodes(New object:C1471()
 			Else 
 				$result:=""
 			End if 
@@ -28,3 +43,5 @@ Function render($data : Object)->$result : Text
 		Else 
 			$result:=""
 	End case 
+	
+Function 
