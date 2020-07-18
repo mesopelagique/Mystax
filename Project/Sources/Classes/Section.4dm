@@ -44,6 +44,9 @@ Function render($data : Object)->$result : Text
 				
 			Else 
 				$result:=""
+				For each ($node; This:C1470.nodes)
+					$result:=$result+$node.render($value)
+				End for each 
 			End if 
 			
 		: (Value type:C1509($value)=Is boolean:K8:9)
