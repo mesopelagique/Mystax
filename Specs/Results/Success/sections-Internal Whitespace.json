@@ -1,0 +1,1 @@
+﻿{	"name": "Internal Whitespace",	"data": {		"boolean": true	},	"expected": " |  \n  | \n",	"template": " | {{#boolean}} {{! Important Whitespace }}\n {{/boolean}} | \n",	"desc": "Sections should not alter internal whitespace.",	"result": " |  \n  | \n",	"success": true}

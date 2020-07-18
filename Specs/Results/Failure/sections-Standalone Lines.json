@@ -1,0 +1,1 @@
+﻿{	"name": "Standalone Lines",	"data": {		"boolean": true	},	"expected": "| This Is\n|\n| A Line\n",	"template": "| This Is\n{{#boolean}}\n|\n{{/boolean}}\n| A Line\n",	"desc": "Standalone lines should be removed from the template.",	"result": "| This Is\n\n|\n\n| A Line\n",	"success": false}

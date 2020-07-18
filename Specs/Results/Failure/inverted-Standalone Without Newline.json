@@ -1,0 +1,1 @@
+﻿{	"name": "Standalone Without Newline",	"data": {		"boolean": false	},	"expected": "^\n/\n",	"template": "^{{^boolean}}\n/\n  {{/boolean}}",	"desc": "Standalone tags should not require a newline to follow them.",	"result": "^\n/\n  ",	"success": false}

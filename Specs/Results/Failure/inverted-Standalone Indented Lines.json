@@ -1,0 +1,1 @@
+﻿{	"name": "Standalone Indented Lines",	"data": {		"boolean": false	},	"expected": "| This Is\n|\n| A Line\n",	"template": "| This Is\n  {{^boolean}}\n|\n  {{/boolean}}\n| A Line\n",	"desc": "Standalone indented lines should be removed from the template.",	"result": "| This Is\n  \n|\n  \n| A Line\n",	"success": false}

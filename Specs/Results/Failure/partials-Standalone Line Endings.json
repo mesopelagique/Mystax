@@ -1,0 +1,1 @@
+﻿{	"name": "Standalone Line Endings",	"data": {},	"expected": "|\r\n>|",	"template": "|\r\n{{>partial}}\r\n|",	"desc": "\"\\r\\n\" should be considered a newline for standalone tags.",	"partials": {		"partial": ">"	},	"result": "|\r\n\r\n|",	"success": false}

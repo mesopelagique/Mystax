@@ -1,0 +1,1 @@
+﻿{	"name": "Basic Behavior",	"data": {},	"expected": "\"from partial\"",	"template": "\"{{>text}}\"",	"desc": "The greater-than operator should expand to the named partial.",	"partials": {		"text": "from partial"	},	"result": "\"\"",	"success": false}

@@ -1,0 +1,1 @@
+﻿{	"name": "Padding",	"data": {		"boolean": false	},	"expected": "|=|",	"template": "|{{^ boolean }}={{/ boolean }}|",	"desc": "Superfluous in-tag whitespace should be ignored.",	"result": "|=|",	"success": true}

@@ -1,0 +1,1 @@
+﻿{	"name": "Nested (Falsey)",	"data": {		"bool": false	},	"expected": "| A  E |",	"template": "| A {{#bool}}B {{#bool}}C{{/bool}} D{{/bool}} E |",	"desc": "Nested falsey sections should be omitted.",	"result": "| A  D E |",	"success": false}

@@ -1,0 +1,1 @@
+﻿{	"name": "Empty List",	"data": {		"list": []	},	"expected": "\"\"",	"template": "\"{{#list}}Yay lists!{{/list}}\"",	"desc": "Empty lists should behave like falsey values.",	"result": "\"\"",	"success": true}

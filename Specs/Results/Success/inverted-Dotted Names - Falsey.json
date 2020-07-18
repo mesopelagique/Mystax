@@ -1,0 +1,1 @@
+﻿{	"name": "Dotted Names - Falsey",	"data": {		"a": {			"b": {				"c": false			}		}	},	"expected": "\"Not Here\" == \"Not Here\"",	"template": "\"{{^a.b.c}}Not Here{{/a.b.c}}\" == \"Not Here\"",	"desc": "Dotted names should be valid for Inverted Section tags.",	"result": "\"Not Here\" == \"Not Here\"",	"success": true}

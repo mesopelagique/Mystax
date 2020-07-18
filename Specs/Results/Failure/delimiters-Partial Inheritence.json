@@ -1,0 +1,1 @@
+﻿{	"name": "Partial Inheritence",	"data": {		"value": "yes"	},	"expected": "[ .yes. ]\n[ .yes. ]\n",	"template": "[ {{>include}} ]\n{{= | | =}}\n[ |>include| ]\n",	"desc": "Delimiters set in a parent template should not affect a partial.",	"partials": {		"include": ".{{value}}."	},	"result": "[  ]\n\n[ |>include| ]\n",	"success": false}

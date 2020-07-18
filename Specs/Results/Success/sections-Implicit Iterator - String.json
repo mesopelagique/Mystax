@@ -1,0 +1,1 @@
+﻿{	"name": "Implicit Iterator - String",	"data": {		"list": [			"a",			"b",			"c",			"d",			"e"		]	},	"expected": "\"(a)(b)(c)(d)(e)\"",	"template": "\"{{#list}}({{.}}){{/list}}\"",	"desc": "Implicit iterators should directly interpolate strings.",	"result": "\"(a)(b)(c)(d)(e)\"",	"success": true}

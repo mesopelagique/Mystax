@@ -1,0 +1,1 @@
+﻿{	"name": "Indented Inline Sections",	"data": {		"boolean": false	},	"expected": " NO\n WAY\n",	"template": " {{^boolean}}NO{{/boolean}}\n {{^boolean}}WAY{{/boolean}}\n",	"desc": "Single-line sections should not alter surrounding whitespace.",	"result": " NO\n WAY\n",	"success": true}

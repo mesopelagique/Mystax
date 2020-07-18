@@ -1,0 +1,1 @@
+﻿{	"name": "Internal Whitespace",	"data": {		"boolean": false	},	"expected": " |  \n  | \n",	"template": " | {{^boolean}} {{! Important Whitespace }}\n {{/boolean}} | \n",	"desc": "Inverted should not alter internal whitespace.",	"result": " |  \n  | \n",	"success": true}

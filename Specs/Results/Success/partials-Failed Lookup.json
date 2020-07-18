@@ -1,0 +1,1 @@
+﻿{	"name": "Failed Lookup",	"data": {},	"expected": "\"\"",	"template": "\"{{>text}}\"",	"desc": "The empty string should be used when the named partial is not found.",	"partials": {},	"result": "\"\"",	"success": true}

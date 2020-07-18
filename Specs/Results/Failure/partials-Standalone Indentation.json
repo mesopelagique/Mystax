@@ -1,0 +1,1 @@
+﻿{	"name": "Standalone Indentation",	"data": {		"content": "<\n->"	},	"expected": "\\\n |\n <\n->\n |\n/\n",	"template": "\\\n {{>partial}}\n/\n",	"desc": "Each line of the partial should be indented before rendering.",	"partials": {		"partial": "|\n{{{content}}}\n|\n"	},	"result": "\\\n \n/\n",	"success": false}

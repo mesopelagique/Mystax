@@ -1,0 +1,1 @@
+﻿{	"name": "Surrounding Whitespace",	"data": {},	"expected": "|  |",	"template": "| {{=@ @=}} |",	"desc": "Surrounding whitespace should be left untouched.",	"result": "|  |",	"success": true}

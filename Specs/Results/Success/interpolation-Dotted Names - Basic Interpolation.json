@@ -1,0 +1,1 @@
+﻿{	"name": "Dotted Names - Basic Interpolation",	"data": {		"person": {			"name": "Joe"		}	},	"expected": "\"Joe\" == \"Joe\"",	"template": "\"{{person.name}}\" == \"{{#person}}{{name}}{{/person}}\"",	"desc": "Dotted names should be considered a form of shorthand for sections.",	"result": "\"Joe\" == \"Joe\"",	"success": true}

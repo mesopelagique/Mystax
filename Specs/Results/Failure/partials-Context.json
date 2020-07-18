@@ -1,0 +1,1 @@
+﻿{	"name": "Context",	"data": {		"text": "content"	},	"expected": "\"*content*\"",	"template": "\"{{>partial}}\"",	"desc": "The greater-than operator should operate within the current context.",	"partials": {		"partial": "*{{text}}*"	},	"result": "\"\"",	"success": false}

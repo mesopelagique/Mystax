@@ -1,0 +1,1 @@
+﻿{	"name": "Standalone Line Endings",	"data": {},	"expected": "|\r\n|",	"template": "|\r\n{{! Standalone Comment }}\r\n|",	"desc": "\"\\r\\n\" should be considered a newline for standalone tags.",	"result": "|\r\n\r\n|",	"success": false}

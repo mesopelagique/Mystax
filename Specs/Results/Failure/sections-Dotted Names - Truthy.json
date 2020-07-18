@@ -1,0 +1,1 @@
+﻿{	"name": "Dotted Names - Truthy",	"data": {		"a": {			"b": {				"c": true			}		}	},	"expected": "\"Here\" == \"Here\"",	"template": "\"{{#a.b.c}}Here{{/a.b.c}}\" == \"Here\"",	"desc": "Dotted names should be valid for Section tags.",	"result": "\"\" == \"Here\"",	"success": false}

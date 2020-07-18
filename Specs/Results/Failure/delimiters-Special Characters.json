@@ -1,0 +1,1 @@
+﻿{	"name": "Special Characters",	"data": {		"text": "It worked!"	},	"expected": "(It worked!)",	"template": "({{=[ ]=}}[text])",	"desc": "Characters with special meaning regexen should be valid delimiters.",	"result": "([text])",	"success": false}

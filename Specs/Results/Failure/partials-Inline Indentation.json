@@ -1,0 +1,1 @@
+﻿{	"name": "Inline Indentation",	"data": {		"data": "|"	},	"expected": "  |  >\n>\n",	"template": "  {{data}}  {{> partial}}\n",	"desc": "Whitespace should be left untouched.",	"partials": {		"partial": ">\n>"	},	"result": "  |  \n",	"success": false}

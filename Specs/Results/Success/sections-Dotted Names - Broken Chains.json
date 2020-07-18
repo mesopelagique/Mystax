@@ -1,0 +1,1 @@
+﻿{	"name": "Dotted Names - Broken Chains",	"data": {		"a": {}	},	"expected": "\"\" == \"\"",	"template": "\"{{#a.b.c}}Here{{/a.b.c}}\" == \"\"",	"desc": "Dotted names that cannot be resolved should be considered falsey.",	"result": "\"\" == \"\"",	"success": true}

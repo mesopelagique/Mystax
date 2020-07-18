@@ -1,0 +1,1 @@
+﻿{	"name": "Implicit Iterator - Decimal",	"data": {		"list": [			1.1,			2.2,			3.3,			4.4,			5.5		]	},	"expected": "\"(1.1)(2.2)(3.3)(4.4)(5.5)\"",	"template": "\"{{#list}}({{.}}){{/list}}\"",	"desc": "Implicit iterators should cast decimals to strings and interpolate.",	"result": "\"(1,1)(2,2)(3,3)(4,4)(5,5)\"",	"success": false}

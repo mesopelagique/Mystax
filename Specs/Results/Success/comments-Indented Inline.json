@@ -1,0 +1,1 @@
+﻿{	"name": "Indented Inline",	"data": {},	"expected": "  12 \n",	"template": "  12 {{! 34 }}\n",	"desc": "Inline comments should not strip whitespace",	"result": "  12 \n",	"success": true}

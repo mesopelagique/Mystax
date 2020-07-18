@@ -1,0 +1,1 @@
+﻿{	"name": "Multiline",	"data": {},	"expected": "1234567890\n",	"template": "12345{{!\n  This is a\n  multi-line comment...\n}}67890\n",	"desc": "Multiline comments should be permitted.",	"result": "1234567890\n",	"success": true}

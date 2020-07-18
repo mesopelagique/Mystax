@@ -1,0 +1,1 @@
+﻿{	"name": "Dotted Names - Broken Chain Resolution",	"data": {		"a": {			"b": {}		},		"c": {			"name": "Jim"		}	},	"expected": "\"\" == \"\"",	"template": "\"{{a.b.c.name}}\" == \"\"",	"desc": "Each part of a dotted name should resolve only against its parent.",	"result": "\"\" == \"\"",	"success": true}

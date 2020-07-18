@@ -1,0 +1,1 @@
+﻿{	"name": "Dotted Names - Arbitrary Depth",	"data": {		"a": {			"b": {				"c": {					"d": {						"e": {							"name": "Phil"						}					}				}			}		}	},	"expected": "\"Phil\" == \"Phil\"",	"template": "\"{{a.b.c.d.e.name}}\" == \"Phil\"",	"desc": "Dotted names should be functional to any level of nesting.",	"result": "\"Phil\" == \"Phil\"",	"success": true}

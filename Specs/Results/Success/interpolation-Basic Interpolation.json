@@ -1,0 +1,1 @@
+﻿{	"name": "Basic Interpolation",	"data": {		"subject": "world"	},	"expected": "Hello, world!\n",	"template": "Hello, {{subject}}!\n",	"desc": "Unadorned tags should interpolate content into the template.",	"result": "Hello, world!\n",	"success": true}

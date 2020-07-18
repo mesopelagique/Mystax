@@ -1,0 +1,1 @@
+﻿{	"name": "Pair Behavior",	"data": {		"text": "Hey!"	},	"expected": "(Hey!)",	"template": "{{=<% %>=}}(<%text%>)",	"desc": "The equals sign (used on both sides) should permit delimiter changes.",	"result": "(<%text%>)",	"success": false}

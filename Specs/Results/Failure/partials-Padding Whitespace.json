@@ -1,0 +1,1 @@
+﻿{	"name": "Padding Whitespace",	"data": {		"boolean": true	},	"expected": "|[]|",	"template": "|{{> partial }}|",	"desc": "Superfluous in-tag whitespace should be ignored.",	"partials": {		"partial": "[]"	},	"result": "||",	"success": false}

@@ -1,0 +1,1 @@
+﻿{	"name": "HTML Escaping",	"data": {		"forbidden": "& \" < >"	},	"expected": "These characters should be HTML escaped: &amp; &quot; &lt; &gt;\n",	"template": "These characters should be HTML escaped: {{forbidden}}\n",	"desc": "Basic interpolation should be HTML escaped.",	"result": "These characters should be HTML escaped: & \" < >\n",	"success": false}

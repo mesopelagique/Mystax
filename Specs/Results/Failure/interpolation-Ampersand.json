@@ -1,0 +1,1 @@
+﻿{	"name": "Ampersand",	"data": {		"forbidden": "& \" < >"	},	"expected": "These characters should not be HTML escaped: & \" < >\n",	"template": "These characters should not be HTML escaped: {{&forbidden}}\n",	"desc": "Ampersand should interpolate without HTML escaping.",	"result": "These characters should not be HTML escaped: \n",	"success": false}

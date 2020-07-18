@@ -1,0 +1,1 @@
+﻿{	"name": "Dotted Names - Broken Chains",	"data": {		"a": {}	},	"expected": "\"\" == \"\"",	"template": "\"{{a.b.c}}\" == \"\"",	"desc": "Any falsey value prior to the last part of the name should yield ''.",	"result": "\"\" == \"\"",	"success": true}

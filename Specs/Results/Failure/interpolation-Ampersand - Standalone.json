@@ -1,0 +1,1 @@
+﻿{	"name": "Ampersand - Standalone",	"data": {		"string": "---"	},	"expected": "  ---\n",	"template": "  {{&string}}\n",	"desc": "Standalone interpolation should not alter surrounding whitespace.",	"result": "  \n",	"success": false}

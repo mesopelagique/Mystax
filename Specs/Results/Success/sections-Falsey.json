@@ -1,0 +1,1 @@
+﻿{	"name": "Falsey",	"data": {		"boolean": false	},	"expected": "\"\"",	"template": "\"{{#boolean}}This should not be rendered.{{/boolean}}\"",	"desc": "Falsey sections should have their contents omitted.",	"result": "\"\"",	"success": true}

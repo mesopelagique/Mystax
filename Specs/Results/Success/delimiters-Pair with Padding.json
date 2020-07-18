@@ -1,0 +1,1 @@
+﻿{	"name": "Pair with Padding",	"data": {},	"expected": "||",	"template": "|{{= @   @ =}}|",	"desc": "Superfluous in-tag whitespace should be ignored.",	"result": "||",	"success": true}

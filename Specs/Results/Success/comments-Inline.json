@@ -1,0 +1,1 @@
+﻿{	"name": "Inline",	"data": {},	"expected": "1234567890",	"template": "12345{{! Comment Block! }}67890",	"desc": "Comment blocks should be removed from the template.",	"result": "1234567890",	"success": true}

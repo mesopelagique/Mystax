@@ -1,0 +1,1 @@
+﻿{	"name": "Surrounding Whitespace",	"data": {		"boolean": true	},	"expected": " | \t|\t | \n",	"template": " | {{#boolean}}\t|\t{{/boolean}} | \n",	"desc": "Sections should not alter surrounding whitespace.",	"result": " | \t|\t | \n",	"success": true}

@@ -1,0 +1,1 @@
+﻿{	"name": "Surrounding Whitespace",	"data": {},	"expected": "| \t|\t |",	"template": "| {{>partial}} |",	"desc": "The greater-than operator should not alter surrounding whitespace.",	"partials": {		"partial": "\t|\t"	},	"result": "|  |",	"success": false}

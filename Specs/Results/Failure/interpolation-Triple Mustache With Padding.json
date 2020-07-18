@@ -1,0 +1,1 @@
+﻿{	"name": "Triple Mustache With Padding",	"data": {		"string": "---"	},	"expected": "|---|",	"template": "|{{{ string }}}|",	"desc": "Superfluous in-tag whitespace should be ignored.",	"result": "|}|",	"success": false}

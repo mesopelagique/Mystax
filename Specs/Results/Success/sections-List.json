@@ -1,0 +1,1 @@
+﻿{	"name": "List",	"data": {		"list": [			{				"item": 1			},			{				"item": 2			},			{				"item": 3			}		]	},	"expected": "\"123\"",	"template": "\"{{#list}}{{item}}{{/list}}\"",	"desc": "Lists should be iterated; list items should visit the context stack.",	"result": "\"123\"",	"success": true}

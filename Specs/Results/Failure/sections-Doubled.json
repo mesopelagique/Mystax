@@ -1,0 +1,1 @@
+﻿{	"name": "Doubled",	"data": {		"two": "second",		"bool": true	},	"expected": "* first\n* second\n* third\n",	"template": "{{#bool}}\n* first\n{{/bool}}\n* {{two}}\n{{#bool}}\n* third\n{{/bool}}\n",	"desc": "Multiple sections per template should be permitted.",	"result": "\n* first\n\n* second\n\n* third\n\n",	"success": false}

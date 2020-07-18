@@ -1,0 +1,1 @@
+﻿{	"name": "No Interpolation",	"data": {},	"expected": "Hello from {Mustache}!\n",	"template": "Hello from {Mustache}!\n",	"desc": "Mustache-free templates should render as-is.",	"result": "Hello from {Mustache}!\n",	"success": true}

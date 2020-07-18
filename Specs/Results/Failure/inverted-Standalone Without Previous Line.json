@@ -1,0 +1,1 @@
+﻿{	"name": "Standalone Without Previous Line",	"data": {		"boolean": false	},	"expected": "^\n/",	"template": "  {{^boolean}}\n^{{/boolean}}\n/",	"desc": "Standalone tags should not require a newline to precede them.",	"result": "  \n^\n/",	"success": false}

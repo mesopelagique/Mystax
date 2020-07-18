@@ -1,0 +1,1 @@
+﻿{	"name": "Standalone Without Newline",	"data": {},	"expected": "!\n",	"template": "!\n  {{! I'm Still Standalone }}",	"desc": "Standalone tags should not require a newline to follow them.",	"result": "!\n  ",	"success": false}

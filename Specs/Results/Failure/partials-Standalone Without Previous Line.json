@@ -1,0 +1,1 @@
+﻿{	"name": "Standalone Without Previous Line",	"data": {},	"expected": "  >\n  >>",	"template": "  {{>partial}}\n>",	"desc": "Standalone tags should not require a newline to precede them.",	"partials": {		"partial": ">\n>"	},	"result": "  \n>",	"success": false}

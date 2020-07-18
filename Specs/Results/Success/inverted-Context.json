@@ -1,0 +1,1 @@
+﻿{	"name": "Context",	"data": {		"context": {			"name": "Joe"		}	},	"expected": "\"\"",	"template": "\"{{^context}}Hi {{name}}.{{/context}}\"",	"desc": "Objects and hashes should behave like truthy values.",	"result": "\"\"",	"success": true}

@@ -1,0 +1,1 @@
+﻿{	"name": "Triple Mustache Decimal Interpolation",	"data": {		"power": 1.21	},	"expected": "\"1.21 jiggawatts!\"",	"template": "\"{{{power}}} jiggawatts!\"",	"desc": "Decimals should interpolate seamlessly with proper significance.",	"result": "\"} jiggawatts!\"",	"success": false}

@@ -1,0 +1,1 @@
+﻿{	"name": "Implicit Iterator - Array",	"desc": "Implicit iterators should allow iterating over nested arrays.",	"data": {		"list": [			[				1,				2,				3			],			[				"a",				"b",				"c"			]		]	},	"template": "\"{{#list}}({{#.}}{{.}}{{/.}}){{/list}}\"",	"expected": "\"(123)(abc)\"",	"result": "\"()()\"",	"success": false}

@@ -51,7 +51,7 @@ Function static_compile($currentText : Text; $nodes : Collection)
 							
 						Else 
 							// BAD ASSERT?
-							ASSERT:C1129(False:C215; "Missing session close {{/"+$tmpText+"}}")
+							// ASSERT(False; "Missing session close {{/"+$tmpText+"}}")
 						End if 
 						
 					: ($first="!")  // is ignore node

@@ -10,7 +10,9 @@ Function render($data : Variant)->$result : Text
 	
 	var $key : Text
 	For each ($key; This:C1470.keyPath)
-		$currentData:=$currentData[$key]
+		If (Value type:C1509($currentData)=Is object:K8:27)
+			$currentData:=$currentData[$key]
+		End if 
 	End for each 
 	
 	If ($currentData=Null:C1517)

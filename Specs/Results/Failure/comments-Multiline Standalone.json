@@ -1,0 +1,1 @@
+﻿{	"name": "Multiline Standalone",	"data": {},	"expected": "Begin.\nEnd.\n",	"template": "Begin.\n{{!\nSomething's going on here...\n}}\nEnd.\n",	"desc": "All standalone comment lines should be removed.",	"result": "Begin.\n\nEnd.\n",	"success": false}

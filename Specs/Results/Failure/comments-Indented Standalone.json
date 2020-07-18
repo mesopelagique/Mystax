@@ -1,0 +1,1 @@
+﻿{	"name": "Indented Standalone",	"data": {},	"expected": "Begin.\nEnd.\n",	"template": "Begin.\n  {{! Indented Comment Block! }}\nEnd.\n",	"desc": "All standalone comment lines should be removed.",	"result": "Begin.\n  \nEnd.\n",	"success": false}

@@ -1,0 +1,1 @@
+﻿{	"name": "Ampersand Integer Interpolation",	"data": {		"mph": 85	},	"expected": "\"85 miles an hour!\"",	"template": "\"{{&mph}} miles an hour!\"",	"desc": "Integers should interpolate seamlessly.",	"result": "\" miles an hour!\"",	"success": false}

@@ -1,0 +1,1 @@
+﻿{	"name": "Truthy",	"data": {		"boolean": true	},	"expected": "\"This should be rendered.\"",	"template": "\"{{#boolean}}This should be rendered.{{/boolean}}\"",	"desc": "Truthy sections should have their contents rendered.",	"result": "\"This should be rendered.\"",	"success": true}

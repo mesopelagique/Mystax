@@ -1,0 +1,1 @@
+﻿{	"name": "Surrounding Whitespace",	"data": {},	"expected": "12345  67890",	"template": "12345 {{! Comment Block! }} 67890",	"desc": "Comment removal should preserve surrounding whitespace.",	"result": "12345  67890",	"success": true}
