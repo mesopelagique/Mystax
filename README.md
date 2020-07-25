@@ -2,6 +2,8 @@
 
 [Mustache](https://en.wikipedia.org/wiki/Mustache_(template_system)) is a [web template system](https://en.wikipedia.org/wiki/Web_template_system), which use heavily braces `{ }`, hence its name.
 
+Mystax support basic features of mustache templating.
+
 ## Usage
 
 Create a parser for one template (`Text` variable) and compile it (only one time).
@@ -90,6 +92,10 @@ and the result will be
   <h2>By Peter Straub</h2>
   <h2>By Stephen King</h2>
 ```
+
+## TODO
+
+- support more features and fix some bugs [see test](Specs)
 
 ## Why Mystax
 
