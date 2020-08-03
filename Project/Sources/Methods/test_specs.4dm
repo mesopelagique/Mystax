@@ -1,6 +1,6 @@
 //%attributes = {}
 
-var $specsFolder, $resultFolder : 4D:C1709.Folder
+var $specsFolder; $resultFolder : 4D:C1709.Folder
 var $file : 4D:C1709.File
 
 $specsFolder:=Folder:C1567(fk database folder:K87:14).folder("Specs")
@@ -10,7 +10,7 @@ For each ($file; $specsFolder.files())
 	
 	If (($file.extension=".json") & (Not:C34($file.fullName[[1]]="~")))
 		
-		var $spec, $test : Object
+		var $spec; $test : Object
 		$spec:=JSON Parse:C1218($file.getText())
 		
 		For each ($test; $spec.tests)

@@ -34,8 +34,9 @@ Function render($data : Object)->$result : Text
 			End if 
 			
 		: (Value type:C1509($value)=Is boolean:K8:9)
+			
 			If (Not:C34($value))
-				$result:=This:C1470.renderNodes(New object:C1471()
+				$result:=This:C1470.renderNodes(New object:C1471())
 			Else 
 				$result:=""
 			End if 
