@@ -7,7 +7,7 @@ Function render($data : Object)->$result : Text
 	
 Function static_compile($currentText : Text; $nodes : Collection)
 	If (Length:C16($currentText)>0)
-		var $tmpText, $sectionText : Text
+		var $tmpText; $sectionText : Text
 		var $pos : Integer
 		$pos:=Position:C15("{{"; $currentText)
 		
