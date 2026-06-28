@@ -45,4 +45,4 @@ Function render($data : Object)->$result : Text
 			$result:=""
 	End case 
 	
-Function 
+Function

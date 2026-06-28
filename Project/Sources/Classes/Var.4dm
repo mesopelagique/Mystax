@@ -1,3 +1,5 @@
+property keyPath : Collection
+
 Class extends Node
 
 Class constructor($template : Text)

@@ -1,3 +1,5 @@
+property section : Text
+property nodes : Collection
 
 Class extends Node
 

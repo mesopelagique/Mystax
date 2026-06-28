@@ -1,14 +1,13 @@
 //%attributes = {}
 
-var $specsFolder; $resultFolder : 4D:C1709.Folder
+var $specsFolder:=Folder:C1567(fk database folder:K87:14).folder("Specs")
+var $resultFolder:=$specsFolder.folder("Results")
+
 var $file : 4D:C1709.File
-
-$specsFolder:=Folder:C1567(fk database folder:K87:14).folder("Specs")
-$resultFolder:=$specsFolder.folder("Results")
-
 For each ($file; $specsFolder.files())
 	
-	If (($file.extension=".json") & (Not:C34($file.fullName[[1]]="~")))
+	If (($file.extension=".json")\
+		 && (String:C10($file.fullName[[1]])#"~"))
 		
 		var $spec; $test : Object
 		$spec:=JSON Parse:C1218($file.getText())
@@ -20,7 +19,7 @@ For each ($file; $specsFolder.files())
 			
 			If ($resultFolder.exists)
 				
-				$resultFolder.folder(Choose:C955($test.success; "Success"; "Failure")).create(True:C214)
+				$resultFolder.folder(Choose:C955($test.success; "Success"; "Failure")).create()
 				$resultFolder.folder(Choose:C955($test.success; "Success"; "Failure")).file($file.name+"-"+$test.name+".json").setText(JSON Stringify:C1217($test; *))
 				
 			Else 

@@ -1,11 +1,9 @@
 //%attributes = {}
-var $template : Text
 var $parser : cs:C1710.Parser
-var $nodeCount : Integer
 
 // simple text
-$template:="simple text"
-$nodeCount:=1
+var $template:="simple text"
+var $nodeCount:=1
 $parser:=mystax.parser($template).compile()
 ASSERT:C1129($parser.nodes.length=$nodeCount; "No correct number of nodes founds for "+$template+". Expected "+String:C10($nodeCount)+" but have "+JSON Stringify:C1217($parser.nodes))
 ASSERT:C1129(OB Instance of:C1731($parser.nodes[0]; cs:C1710.Text))
@@ -101,8 +99,8 @@ ASSERT:C1129($parser.render(New object:C1471("persons"; New collection:C1472(New
 
 If (ds:C1482["Table_1"]#Null:C1517)
 	If (ds:C1482["Table_1"].all().length=0)
-		C_OBJECT:C1216($entity)
-		$entity:=ds:C1482["Table_1"].new()
+		
+		var $entity : Object:=ds:C1482["Table_1"].new()
 		$entity.name:="test"
 		$entity.save()
 		

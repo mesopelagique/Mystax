@@ -1,3 +1,4 @@
+property template : Text
 
 Class constructor($template : Text)
 	This:C1470.template:=$template

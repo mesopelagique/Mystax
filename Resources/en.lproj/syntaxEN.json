@@ -1,0 +1,352 @@
+{
+	"_method_": {
+		"mystax": {
+			"Syntax": "**mystax**() : Object",
+			"Params": [
+				[
+					"",
+					"Object",
+					"<-"
+				]
+			],
+			"Summary": ""
+		}
+	},
+	"Ignore": {
+		"render()": {
+			"Syntax": "**.render**( *data* : Object )->result : Text",
+			"Params": [
+				[
+					"data",
+					"Object",
+					"->"
+				],
+				[
+					"result",
+					"Text",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"_inheritedFrom_": "Node"
+	},
+	"cs.mystax": {
+		"Var": {
+			"new()": {
+				"Syntax": "**.new**( *template* : Text )",
+				"Params": [
+					[
+						"template",
+						"Text",
+						"->"
+					]
+				],
+				"Summary": ""
+			}
+		},
+		"Section": {
+			"new()": {
+				"Syntax": "**.new**( *template* : Text; *section* : Text; *parser* : 4D.Function )",
+				"Params": [
+					[
+						"template",
+						"Text",
+						"->"
+					],
+					[
+						"section",
+						"Text",
+						"->"
+					],
+					[
+						"parser",
+						"4D.Function",
+						"->"
+					]
+				],
+				"Summary": ""
+			}
+		},
+		"InvertedSection": {
+			"new()": {
+				"Syntax": "**.new**( *template* : Text; *section* : Text; *parser* : 4D.Function )",
+				"Params": [
+					[
+						"template",
+						"Text",
+						"->"
+					],
+					[
+						"section",
+						"Text",
+						"->"
+					],
+					[
+						"parser",
+						"4D.Function",
+						"->"
+					]
+				],
+				"Summary": ""
+			}
+		},
+		"Node": {
+			"new()": {
+				"Syntax": "**.new**( *template* : Text )",
+				"Params": [
+					[
+						"template",
+						"Text",
+						"->"
+					]
+				],
+				"Summary": ""
+			}
+		},
+		"Parser": {
+			"new()": {
+				"Syntax": "**.new**( *template* : Text )",
+				"Params": [
+					[
+						"template",
+						"Text",
+						"->"
+					]
+				],
+				"Summary": ""
+			}
+		}
+	},
+	"Var": {
+		"render()": {
+			"Syntax": "**.render**( *data* : Variant )->result : Text",
+			"Params": [
+				[
+					"data",
+					"Variant",
+					"->"
+				],
+				[
+					"result",
+					"Text",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"keyPath": {
+			"Syntax": "keyPath : Collection"
+		},
+		"_inheritedFrom_": "Node"
+	},
+	"Section": {
+		"renderNodes()": {
+			"Syntax": "**.renderNodes**( *data* : Variant )->result : Text",
+			"Params": [
+				[
+					"data",
+					"Variant",
+					"->"
+				],
+				[
+					"result",
+					"Text",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"render()": {
+			"Syntax": "**.render**( *data* : Object )->result : Text",
+			"Params": [
+				[
+					"data",
+					"Object",
+					"->"
+				],
+				[
+					"result",
+					"Text",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"nodes": {
+			"Syntax": "nodes : Collection"
+		},
+		"section": {
+			"Syntax": "section : Text"
+		},
+		"_inheritedFrom_": "Node"
+	},
+	"InvertedSection": {
+		"()": {
+			"Syntax": "**.**( *template* : Text; *section* : Text; *parser* : 4D.Function )",
+			"Params": [
+				[
+					"template",
+					"Text",
+					"->"
+				],
+				[
+					"section",
+					"Text",
+					"->"
+				],
+				[
+					"parser",
+					"4D.Function",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"render()": {
+			"Syntax": "**.render**( *data* : Object )->result : Text",
+			"Params": [
+				[
+					"data",
+					"Object",
+					"->"
+				],
+				[
+					"result",
+					"Text",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"_inheritedFrom_": "Section"
+	},
+	"Node": {
+		"static_compile()": {
+			"Syntax": "**.static_compile**( *currentText* : Text; *nodes* : Collection )",
+			"Params": [
+				[
+					"currentText",
+					"Text",
+					"->"
+				],
+				[
+					"nodes",
+					"Collection",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"render()": {
+			"Syntax": "**.render**( *data* : Object )->result : Text",
+			"Params": [
+				[
+					"data",
+					"Object",
+					"->"
+				],
+				[
+					"result",
+					"Text",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"template": {
+			"Syntax": "template : Text"
+		}
+	},
+	"Mystax": {
+		"render()": {
+			"Syntax": "**.render**( *template* : Text; *data* : Object )->result : Text",
+			"Params": [
+				[
+					"template",
+					"Text",
+					"->"
+				],
+				[
+					"data",
+					"Object",
+					"->"
+				],
+				[
+					"result",
+					"Text",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"parse()": {
+			"Syntax": "**.parse**( *text* : Text )->parser : cs.mystax.Parser",
+			"Params": [
+				[
+					"text",
+					"Text",
+					"->"
+				],
+				[
+					"parser",
+					"cs.mystax.Parser",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"parser()": {
+			"Syntax": "**.parser**( *text* : Text )->parser : cs.mystax.Parser",
+			"Params": [
+				[
+					"text",
+					"Text",
+					"->"
+				],
+				[
+					"parser",
+					"cs.mystax.Parser",
+					"<-"
+				]
+			],
+			"Summary": ""
+		}
+	},
+	"Parser": {
+		"render()": {
+			"Syntax": "**.render**( *data* : Object )->result : Text",
+			"Params": [
+				[
+					"data",
+					"Object",
+					"->"
+				],
+				[
+					"result",
+					"Text",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"compile()": {
+			"Syntax": "**.compile**()->this : cs.mystax.Parser",
+			"Params": [
+				[
+					"this",
+					"cs.mystax.Parser",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"nodes": {
+			"Syntax": "nodes : Collection"
+		},
+		"_inheritedFrom_": "Node"
+	},
+	"Text": {
+		"_inheritedFrom_": "Node"
+	}
+}

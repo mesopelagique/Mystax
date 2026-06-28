@@ -1,3 +1,4 @@
+property nodes : Collection
 
 Class extends Node
 

@@ -1,3 +1,5 @@
 Data/*
 Project/DerivedData
 userPreferences.*
+*.4DD
+*.journal
